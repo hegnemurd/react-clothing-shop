@@ -1,0 +1,17 @@
+#cart {
+  position: relative;
+  padding: 5%;
+  /* display: flex; */
+}
+
+#delButton {
+  width: 16px;
+  height: 16px;
+  top: 15px;
+  right: 5%;
+  position: absolute;
+}
+
+img {
+  flex: start;
+}
