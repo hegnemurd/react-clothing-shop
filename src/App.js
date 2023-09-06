@@ -1,11 +1,12 @@
-import AppNavbar from "./navbar/navbar";
+import AppNavbar from "./components/navbar/navbar";
 import "./App.css";
+import ProductView from "./components/productView/productView";
 
 function App() {
   return (
     <div className="App">
       <AppNavbar />
-      <h1>hello world</h1>
+      <ProductView />
     </div>
   );
 }

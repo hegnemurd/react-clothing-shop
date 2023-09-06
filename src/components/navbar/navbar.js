@@ -1,11 +1,11 @@
+import "./navbar.css";
 import {
-  Button,
   Container,
-  Form,
   Nav,
   Navbar,
   Offcanvas,
 } from "react-bootstrap";
+import Cart from "../cart/cart";
 
 function AppNavbar() {
   return (
@@ -28,26 +28,11 @@ function AppNavbar() {
               </Offcanvas.Header>
               <Offcanvas.Body>
                 <Nav className="justify-content-end flex-grow-1 pe-3">
-                  <Container id="cart">
-                    <Button id="delButton">X</Button>
-                    <img alt="clothing-item" />
-                    <h3>Clothing Item Description</h3>
-                    <p>size | colour</p>
-                    <p>quantity</p>
-                    <p>cost $</p>
-                    <p>- +</p>
-                  </Container>
-                  <Button variant="outline-primary">Checkout</Button>
+                  {/* if statement for when cart is empty display h3, 
+                  if cart has any item(s) then display Cart component where items are displayed */}
+                  <h3>Cart is empty.</h3>
+                  <Cart />
                 </Nav>
-                <Form className="d-flex">
-                  <Form.Control
-                    type="Search"
-                    placeholder="Search"
-                    className="me-2"
-                    aria-label="Search"
-                  />
-                  <Button variant="outline-success">Search</Button>
-                </Form>
               </Offcanvas.Body>
             </Navbar.Offcanvas>
           </Container>
