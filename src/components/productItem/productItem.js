@@ -1,5 +1,7 @@
+import classes from "./ProductItem.module.css";
+
 function ProductItem() {
-  return <div>product item</div>;
+  return <div className={classes.div}>product item</div>;
 }
 
 export default ProductItem;

@@ -6,10 +6,10 @@ function ProductView() {
   return (
     <Container>
       <Row>
-        <Col>
+        <Col xs={2}>
           <SizeFilter />
         </Col>
-        <Col>
+        <Col xs={10}>
           <Products />
         </Col>
       </Row>
