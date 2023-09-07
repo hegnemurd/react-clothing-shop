@@ -1,10 +1,11 @@
-import { Container, Button } from "react-bootstrap";
+import { Container, Button, CloseButton } from "react-bootstrap";
 
 function Cart() {
   return (
     <div>
       <Container id="cart">
-        <Button className="delButton">X</Button>
+        <CloseButton className="delButton" />
+        {/* <Button className="delButton">X</Button> */}
         <img alt="clothing-item" />
         <h3>Clothing Item Description</h3>
         <p>size | colour</p>

@@ -4,7 +4,7 @@ import SizeFilter from "../sizeFilter/sizeFilter";
 
 function ProductView() {
   return (
-    <Container>
+    <Container fluid>
       <Row>
         <Col xs={2}>
           <SizeFilter />
