@@ -1,12 +1,13 @@
 import AppNavbar from "./components/navbar/navbar";
-import "./App.css";
 import ProductView from "./components/productView/productView";
+
+import "./App.css";
 
 function App() {
   return (
     <div className="App">
       <AppNavbar />
-      <ProductView />
+      <ProductView/>
     </div>
   );
 }

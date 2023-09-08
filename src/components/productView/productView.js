@@ -2,7 +2,7 @@ import { Container, Row, Col } from "react-bootstrap";
 import Products from "../products/products";
 import SizeFilter from "../sizeFilter/sizeFilter";
 
-function ProductView() {
+function ProductView(props) {
   return (
     <Container fluid>
       <Row>

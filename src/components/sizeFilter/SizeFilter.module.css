@@ -1,17 +1,10 @@
-.div {
-  background-color: lightcoral;
-}
-
 .label {
-  /* display: inline-block; */
   position: relative;
   cursor: pointer;
   user-select: none;
   width: 40px;
   height: 40px;
   margin: 8px;
-  /* border-radius: 50%; */
-  /* line-height: 35px; */
   text-align: center;
 }
 

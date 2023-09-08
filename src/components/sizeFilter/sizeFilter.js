@@ -4,7 +4,7 @@ function SizeFilter() {
   const sizes = ["XS", "S", "M", "L", "XXL"];
 
   return (
-    <div>
+    <div className={classes.div}>
       {sizes.map((size) => (
         <label className={classes.label}>
           <input type="checkbox" className={classes.input} />
