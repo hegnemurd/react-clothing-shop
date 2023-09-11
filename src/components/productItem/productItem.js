@@ -4,7 +4,7 @@ import classes from "./ProductItem.module.css";
 
 function ProductItem(props) {
   return (
-    <Card style={{ width: "15rem" }} id={props.id}>
+    <Card style={{ width: "15rem" }} id={props.id} key={props.id}>
       <Card.Img src={props.img} />
       <Card.Body>
         <Card.Title>{props.name}</Card.Title>
