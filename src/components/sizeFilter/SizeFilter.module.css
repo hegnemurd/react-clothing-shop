@@ -13,10 +13,9 @@
   opacity: 0;
 }
 
-.label:hover {
+.label:hover span {
   cursor: pointer;
   border: 2px solid rgba(70, 69, 69, 0.836);
-  border-radius: 60%;
 }
 
 .unchecked {
