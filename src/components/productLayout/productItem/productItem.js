@@ -1,6 +1,5 @@
 import { Button, Card } from "react-bootstrap";
-// import { from "../../models/clothingItems";
-import classes from "./ProductItem.module.css";
+// import classes from "./ProductItem.module.css";
 
 function ProductItem(props) {
   return (

@@ -1,5 +1,5 @@
 import AppNavbar from "./components/navbar/navbar";
-import ProductView from "./components/productView/productView";
+import ProductView from "./components/productLayout/productView/productView";
 import { clothingItems } from "./models/clothingItems";
 import "./App.css";
 

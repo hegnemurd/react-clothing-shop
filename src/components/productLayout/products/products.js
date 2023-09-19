@@ -1,6 +1,6 @@
 import { Container, Row } from "react-bootstrap";
 import ProductItem from "../productItem/productItem";
-import { clothingItems } from "../../models/clothingItems";
+import { clothingItems } from "../../../models/clothingItems";
 
 function Products() {
   return (
@@ -12,6 +12,7 @@ function Products() {
             id={item.id}
             img={item.img}
             clothingName={item.name}
+            sizes={item.sizes}
             price={item.price}
             discountPrice={item.discountPrice}
           />
