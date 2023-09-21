@@ -21,6 +21,14 @@ function AddedToCart() {
 
   const itemsLength = cartCtx.items.length;
 
+  const cartItemRemoveHandler = (id) => {
+    cartCtx.removeItem(id);
+  };
+
+  const cartItemAddHandler = (item) => {
+    cartCtx.addItem({ ...item, amount: 1 });
+  };
+
   useEffect(() => {
     if (itemsLength === 0) {
       return;
@@ -42,6 +50,8 @@ function AddedToCart() {
             sizes={item.sizes}
             price={item.price}
             discountPrice={item.discountPrice}
+            onRemove={cartItemRemoveHandler.bind(null, item.id)}
+            onAdd={cartItemAddHandler.bind(null, item)}
           />
         ))
       )}

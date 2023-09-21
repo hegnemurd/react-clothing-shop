@@ -1,11 +1,18 @@
+import { useContext } from "react";
 import { Button, Card } from "react-bootstrap";
+import CartContext from "../../../store/cart-context";
 // import classes from "./ProductItem.module.css";
 
 function ProductItem(props) {
+  const cartCtx = useContext(CartContext);
 
   const handleAddToCart = () => {
-    
-  }
+    cartCtx.addItem({
+      id: props.id,
+      name: props.name,
+      price: props.price,
+    });
+  };
 
   return (
     <Card style={{ width: "15rem" }} id={props.id} key={props.id}>

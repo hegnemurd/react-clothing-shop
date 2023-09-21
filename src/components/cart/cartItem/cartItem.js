@@ -25,8 +25,8 @@ function CartItem(props) {
             <CloseButton className="delButton" />
             <p>${props.price}</p>
             <ButtonGroup>
-              <Button>-</Button>
-              <Button>+</Button>
+              <Button onClick={props.onRemove}>-</Button>
+              <Button onClick={props.onAdd}>+</Button>
             </ButtonGroup>
           </Col>
         </Row>
